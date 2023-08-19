@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        table {
+            width: 100%;
+        }
+        .green-cell{
+            background-color: lawngreen;
+        }
+        .red-cell{
+            background-color: red;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+    <table border="1" width="%50"> <!--Table #3-->
+        <caption>Tabla ejercicio 2 #3</caption>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>DNI</th>
+                <th>Nota</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Matias</td>
+                <td>Volpe</td>
+                <td>40119706</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Matias</td>
+                <td>Volpe</td>
+                <td>40119706</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Matias</td>
+                <td>Volpe</td>
+                <td>40119706</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br>
+    <table border="1" width="50%"> <!--Table#4-->
+        <caption> Tabla ejercicio 2 #4</caption>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Link Repo</th>
+                <th colspan="3" align="centre">Parciales aprobados</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Matias</td>
+                <td><a href="https://github.com/" target="_blank"> Repo Volpe Matias</a></td>
+                <td class="green-cell"></td>
+                <td class="green-cell"></td>
+                <td class="green-cell"></td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td><a href="github.com" target="_blank"> Repo Perez Juan</a></td>
+                <td class="red-cell"></td>
+                <td class="green-cell"></td>
+                <td class="red-cell"></td>
+            </tr>
+            <tr>
+                <td>Jorge</td>
+                <td><a href="github.com" target="_blank"> Repo Rodriguez Jorge</a></td>
+                <td class="green-cell"></td>
+                <td class="red-cell"></td>
+                <td class="green-cell"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus virtual - Inicio</title>
+</head>
+
+<body>
+    <hr>
+    <h1 style="font-style: italic;">Bienvenido/a al campus virtual, por favor complete sus datos personales</h1>
+    <hr>
+    <form action="" target="_blank" method="post">
+        <label>Rol en la institucion</label>
+        <input type="text" id="tipo" value="ESTUDIANTE" name="tipo" required readonly>
+        <br><br>
+        <label>Nombre completo</label>
+        <input type="text" id="name" placeholder="Nombre" name="name" required>
+        <br><br>
+        <label>Correo electronico</label>
+        <input type="email" id="mail" placeholder="ejemplo@hotmail.com" name="mail" required>
+        <br><br>
+        <label>Edad</label>
+        <input type="number" min="0" max="100" id="age" name="age" required>
+        <br><br>
+        <label>Pais de origen</label>
+        <select name="select" id="select">
+            <option value="Argentina">Argentina</option>
+            <option value="Chile">Chile</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Peru">Peru</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Otro">Otro</option>
+            <option value="" disabled selected></option>
+        </select>
+        <br><br>
+        <label>Condicion laboral</label>
+        <select name="select2" id="select2">
+            <option value="desemp">Desempleado</option>
+            <option value="busq">En busqueda laboral</option>
+            <option value="parttime">Trabajando part-time</option>
+            <option value="fulltime">Trabajando full-time</option>
+            <option value="" disabled selected></option>
+        </select>
+    </form>
+    <hr>
+    <h2>Sobre vos</h2>
+    <hr>
+    <form action="" method="post" target="_blank">
+        <label>Gustos musicales</label>
+        <input type="text" id="music" name="music" required>
+        <br><br>
+        <label>Comidas preferidas</label>
+        <input type="text" id="food" name="food" required>
+        <br><br>
+        <label>Recordar mis datos</label>
+        <input type="checkbox" id="recordar" name="recordar" required>
+        <br><br>
+        <button>Aceptar</button>
+    </form>
+</body>
+</html>
