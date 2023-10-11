@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPE - Calculadora</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+  <div class="todo">
+    <h1 class="titulo">Calculadora de Costo de Energía Eléctrica</h1>
+    <br><br> 
+    <label for="tipo-usuario1">Residencial</label>
+    <input type="radio" id="tipo-usuario1" name="radio-usuario" value="residencial">
+    <br><br>
+    <label for="tipo-usuario1">Industrial</label>
+    <input type="radio" id="tipo-usuario2" name="radio-usuario" value="industrial">
+    <br><br>
+    <label for="select-domicilio">Distrito:</label>
+    <select name="Zona del domicilio" id="select-domicilio">
+      <option value="" id="place-hold" selected disabled>Seleccione</option>
+      <option value="centro" id="dist-centro">Distrito centro</option>
+      <option value="sur" id="dist-sur">Distrito sur</option>
+      <option value="oeste" id="dist-oeste">Distrito Oeste</option>
+      <option value="norte" id="dist-norte">Distrito Norte</option>
+    </select>
+    <br><br>
+    <label for="cant-kw">Cantidad de kWh del mes:</label>
+    <input type="number" id="cant-kw" value="0">
+    <br><br>
+    <button class="boton" id='calculo' onclick="calcularCosto()">Calcular</button>
+  </div>
+</body>
+</html>
